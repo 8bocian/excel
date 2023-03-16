@@ -1,0 +1,52 @@
+#excel{
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(8, 67.5px);
+    width: 75%;
+}
+
+.cell{
+    width: 60px;
+    height: 60px;
+    border: 2.5px solid black;
+    margin-bottom: 2.5px;
+}
+
+p{
+    text-align: center;
+}
+
+.headers{
+    float: left;
+    display: grid;
+    grid-template-columns: repeat(8, 67.5px);
+}
+
+.cellH{
+    width: 60px;
+    height: 20px;
+    border: 2.5px solid black;
+    margin-bottom: 2.5px;
+}
+
+.cellI{
+    width: 20px;
+    height: 60px;
+    border: 2.5px solid black;
+    margin-bottom: 2.5px;
+}
+
+.cellB{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 2.5px solid black;
+    margin-bottom: 2.5px;
+    margin-right: 2.5px;
+}
+
+.indiecies{
+    clear: both;
+    margin-top: 2.5px;
+    width: 5%;
+}
