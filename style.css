@@ -1,8 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
 #excel{
     float: left;
     display: grid;
-    grid-template-columns: repeat(8, 67.5px);
-    width: 75%;
+    grid-template-columns: repeat(9, auto);
+    width: min-content;
 }
 
 .cell{
@@ -10,16 +18,12 @@
     height: 60px;
     border: 2.5px solid black;
     margin-bottom: 2.5px;
+    margin-right: 2.5px;
+
 }
 
 p{
     text-align: center;
-}
-
-.headers{
-    float: left;
-    display: grid;
-    grid-template-columns: repeat(8, 67.5px);
 }
 
 .cellH{
@@ -27,13 +31,17 @@ p{
     height: 20px;
     border: 2.5px solid black;
     margin-bottom: 2.5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .cellI{
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 60px;
     border: 2.5px solid black;
-    margin-bottom: 2.5px;
+    margin-right: 2.5px;
 }
 
 .cellB{
@@ -41,12 +49,46 @@ p{
     width: 20px;
     height: 20px;
     border: 2.5px solid black;
-    margin-bottom: 2.5px;
-    margin-right: 2.5px;
 }
 
-.indiecies{
-    clear: both;
-    margin-top: 2.5px;
-    width: 5%;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+button {
+    background: #fff;
+    border: 1px black solid;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 150ms;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    flex-basis: calc(50% - 10px);
+}
+
+button:hover {
+    background: #e3e3e3;
+    transform: translateY(-5px);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input{
+    text-align: center;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
